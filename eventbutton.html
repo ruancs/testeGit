@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+            <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body style="background-color: lightblue;">
+    
+            <div id="ev" onclick= "clicar()" onmouseenter= "entrar()" onmouseout = "saiu()">
+
+                Evento!
+
+            </div>
+            <style>
+                
+
+
+
+
+                #ev{
+                    
+                    background-color: rgb(194, 39, 11);
+                    text-align: center;
+                    margin-top: 2em;
+                    width: 200px;
+                    height:50px;
+                    line-height:50px;
+                    font-size: 1.4em;
+                    text-transform: uppercase;
+                    padding: 0.1em;
+                    color:lemonchiffon;
+                    border-radius: 0.2em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    box-shadow: 5px 5px 1px gray;
+                    
+                }
+                   
+                    
+
+            </style>
+
+            <script>
+
+                var a = window.document.getElementById('ev')
+
+                function clicar() {                    
+                        a.innerText = 'clicou!'
+                        a.style.animationDuration = '1s'
+                        a.style.background = 'green'
+                        
+
+                        }
+                               
+                        function entrar(){
+                            a.innerText = 'Entrou'
+                            a.style.background = 'green'
+
+                        }
+
+                            function saiu(){
+                                a.innerText = 'Saiu'
+                                
+                                a.style.background = 'rgb(194, 39, 11)'
+                            }
+                
+            </script>
+
+
+
+
+
+    </body>
+
+</html>
